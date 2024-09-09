@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  margin: 0 auto; /* Center the body horizontally */
+  padding: 0; /* Added to remove default body padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+
+
+
+
+/* Navbar styles */
+body {
+ 
+  margin: 0;
+  transition: margin-left .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #66ff00; /* Change only the text color on hover */
+}
+
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #66ff00;
+    color: #000;
+    text-decoration: none;
+    font-family: 'popins', sans-serif;
+}
+.login-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #66ff00;
+}
+.logo img {
+  width: 50px;
+}
+/* Query Form Container */
+.query-form {
+  padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: px;
+}
+
+.query-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.query-form input[type="text"],
+.query-form input[type="email"],
+.query-form textarea {
+  width: calc(100% - 22px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.query-form textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.query-form input[type="text"]:focus,
+.query-form input[type="email"]:focus,
+.query-form textarea:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+.query-form button {
+  background-color: #66ff00;
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.query-form button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.query-form .error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.query-form a {
+  color: #ff6b6b;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.query-form a:hover {
+  color: #e63946;
+}
+/* Success Message */
+.success-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #4CAF50; /* Bright green background */
+  border: 2px solid #388E3C; /* Darker green border */
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.success-message:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.success-message h1 {
+  font-size: 2rem;
+  color: #FFFFFF; /* White text */
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+

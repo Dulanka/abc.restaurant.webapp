@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="picture/4.png" alt="Masala Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="Product.html">Products and Services</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="SearchD.html">Search Facilities</a></li>
+                <li><a href="availability.html">Check Availability</a></li>
+                <li><a href="submit-query.jsp">Submit Queries</a></li>
+                <li><a href="payment.jsp">Make Payment</a></li>
+                <li><a href="reservation.jsp">Reservations</a></li>
+                <li><a href="registerCustomer.jsp">Register</a></li>
+            </ul>
+        </nav>
+        <a href="login.jsp" class="login-btn">Login</a>
+    </header>
+    
+    <div class="content">
+        <div class="left-section">
+            <h1>ABC Food <br> Restaurant</h1>
+            <a href="about.html" target="_blank">
+                
+            </a>
+        </div>
+        <div class="right-section">
+            <img src="picture/1.png" alt="Your Photo">
+        </div>
+        <video autoplay muted loop id="content-background-video">
+            <source src="picture/video background.mp4" type="video/mp4">
+
+        </video>
+    </div>
+    <section id="products">
+        <div class="container-1">
+            <div class="row">
+                <div class="card">
+                    <img src="https://img.icons8.com/?size=100&id=1031&format=png&color=000000" alt="Product 1">
+                    <h2>Master Chefs</h2>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/?size=100&id=267&format=png&color=000000" alt="Product 2">
+                    <h2>Quality Food</h2>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/?size=100&id=9671&format=png&color=000000" alt="Product 3">
+                    <h2>Online Order</h2>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/?size=100&id=1361&format=png&color=000000" alt="Product 3">
+                    <h2>24/7 Service</h2>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/?size=100&id=104&format=png&color=000000" alt="Product 3">
+                    <h2>5 Star Hotel</h2>
+                    
+                </div>
+            </div>
+        
+    
+            
+                <div class="picture1">
+                    <img src="picture/about us.png" alt="Product 6">
+                    </div>
+                </div>
+                <div class="left1-section">
+                    <h2 class="hr-lines"> Popular Items </h2>
+                    
+                </div>
+              
+                    <div class="container-3">
+                        <div class="row-1">
+                            <div class="card-1">
+                                <img src="picture/6.png" alt="Product 1">
+                                <h2>Lemon Roasted Chicken</h2>
+                                
+                            </div>
+                            <div class="card-1">
+                                <img src="picture/9.png" alt="Product 2">
+                                <h2>Chicken Ceaser Salad</h2>
+                                
+                            </div>
+                            <div class="card-1">
+                                <img src="picture/7.png" alt="Product 3">
+                                <h2>Salmon salad</h2>
+                                
+                            </div>
+                            <div class="card-1">
+                                <img src="picture/8.png" alt="Product 3">
+                                <h2>Mie Goreng</h2>
+                                
+                            </div>
+                            <div class="card-1">
+                                <img src="picture/10.png" alt="Product 3">
+                                <h2>Soju Korean Dish</h2>
+                                
+                            </div>
+                        </div>
+                       
+                
+                    
+                            
+                            <div class="picture1">
+                                <img src="picture/back.png" alt="Product 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left1-section">
+                        <h3 class="hr-lines"> Our Master Chefs </h3>
+                        
+                    </div>
+                    <div class="chef-container">
+                        <div class="chef-card">
+                            <img src="picture/kamal.png" alt="Danushka">
+                            <h3>Danushka</h3>
+                            <p>EXECUTIVE CHEF</p>
+                            
+                        </div>
+                        <div class="chef-card">
+                            <img src="picture/nial.png" alt="Malith">
+                            <h3>Malith</h3>
+                            <p>Assistant Chef</p>
+                            
+                        </div>
+                        <div class="chef-card">
+                            <img src="picture/sunil.png" alt="Sadun">
+                            <h3>Sadun</h3>
+                            <p>Section Head</p>
+                            
+                        </div>
+                        <div class="chef-card">
+                            <img src="picture/sasman.png" alt="Dulanka">
+                            <h3>Dulanka</h3>
+                            <p>Assistant Cook</p>
+                            
+                        </div>
+                        </div>
+                        <footer class="footer">
+                            <div class="footer-container">
+                             
+                                <div class="footer-section contact-info">
+                                    <h3>Contact Us</h3>
+                                    <p><strong>Address:</strong> 76/90, colombo 14 </p>
+                                    <p><strong>Phone:</strong> +94 081 3456789</p>
+                                    <p><strong>Email:</strong> info@abcrestaurant.com</p>
+                                </div>
+                                
+                              
+                                <div class="footer-section quick-links">
+                                    <h3>Quick Links</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                                
+                            
+                                <div class="footer-section social-media">
+                                    <h3>Follow Us</h3>
+                                    <div class="social-icons">
+                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                                
+                               
+                                <div class="footer-section newsletter">
+                                    <h3>Subscribe to Our Newsletter</h3>
+                                    <p>Stay updated with our latest news and offers.</p>
+                                    <form class="subscription-form">
+                                        <input type="email" placeholder="Enter your email" required>
+                                        <button type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-bottom">
+                                <p>&copy; 2024 ABC Restaurant. All Rights Reserved.</p>
+                            </div>
+                        </footer>
+                        
+                        
+                        </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Restaurant - Search Facilities</title>
+    <link rel="stylesheet" type="text/css" href="hotelsearch.css" />
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="picture/4.png" alt="ABC Restaurant Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="Product.html">Products and Services</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="SearchD.html">Search Facilities</a></li>
+                <li><a href="availability.html">Check Availability</a></li>
+                <li><a href="submit-query.jsp">Submit Queries</a></li>
+                <li><a href="payment.jsp">Make Payment</a></li>
+                <li><a href="reservation.jsp">Reservations</a></li>
+                <li><a href="registerCustomer.jsp">Register</a></li>
+            </ul>
+        </nav>
+        <a href="login.jsp" class="login-btn">Login</a>
+    </header>
+<div class="left1-section">
+    <h3 class="hr-lines"> Search  </h3>
+    
+</div>
+
+    <!-- Product Search Section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="search">
+                <input type="text" id="find" placeholder="Search Here...." onkeyup="search()">
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <img src="picture/43.jpg" alt="Bebe Bloom Tea">
+                    <h3>Open kitchen front house</h3>
+                    <h4>Open kitchens can provide customers with direct access to information about an establishment's hygiene, professionalism and culinary excellence.</h4>
+                </div>
+                <div class="product">
+                    <img src="picture/42.jpg" alt="Que Herbal Tea">
+                    <h3>Bar and Lounge</h3>
+                    <h4>A stylish area for guests to enjoy a wide range of beverages, from cocktails and wines to soft drinks, with a relaxed atmosphere for socializing</h4>
+                </div>
+                <div class="product">
+                    <img src="picture/44.jpg" alt="Best Friend Tea">
+                    <h3>Live Entertainment</h3>
+                    <h4>Regular live music, DJs, or cultural performances to enhance the dining experience with entertainment.</h4>
+                </div>
+                <div class="product">
+                    <img src="picture/40.jpg" alt="Black Ossum Tea">
+                    <h3>Wi-Fi Access</h3>
+                    <h4>Complimentary Wi-Fi service available throughout the restaurant, allowing guests to stay connected while they dine.</h4>
+                </div>
+                <div class="product">
+                    <img src="picture/41.jpg" alt="Society Ice Tea">
+                    <h3>Meeting Facilities</h3>
+                    <h4>Rooms equipped with AV technology and seating arrangements for corporate meetings, seminars, or workshops.</h4>
+                </div>
+                <div class="product">
+                    <img src="picture/41.jpg" alt="Society Ice Tea">
+                    <h3>Meeting Facilities</h3>
+                    <h4>Rooms equipped with AV technology and seating arrangements for corporate meetings, seminars, or workshops.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let items = document.querySelectorAll('.product');
+            let titles = document.getElementsByTagName('h3');
+            for (var i = 0; i < titles.length; i++) {
+                let a = items[i].getElementsByTagName('h3')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBar = document.getElementById('menu-bar');
+        const navbar = document.querySelector('.navbar');
+        menuBar.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

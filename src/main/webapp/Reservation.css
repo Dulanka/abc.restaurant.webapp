@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  margin: 0 auto; /* Center the body horizontally */
+  padding: 0; /* Added to remove default body padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+
+
+
+
+/* Navbar styles */
+body {
+ 
+  margin: 0;
+  transition: margin-left .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #66ff00; /* Change only the text color on hover */
+}
+
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #66ff00;
+    color: #000;
+    text-decoration: none;
+    font-family: 'popins', sans-serif;
+}
+.login-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #66ff00;
+}
+.logo img {
+  width: 50px;
+}
+
+/* Reservation Form Container */
+.reservation-form-container {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: px;
+}
+
+.reservation-form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #66ff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .navbar a {
+    padding: 10px;
+  }
+
+  .reservation-form-container {
+    padding: 20px;
+    width: 90%;
+  }
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #4CAF50; /* Bright green background */
+  border: 2px solid #388E3C; /* Darker green border */
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.success-message:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.success-message h1 {
+  font-size: 2rem;
+  color: #FFFFFF; /* White text */
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+
+

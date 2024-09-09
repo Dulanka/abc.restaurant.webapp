@@ -1,0 +1,250 @@
+/* Basic reset and body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #000000;
+    color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+}
+
+/* Main section styling */
+section#gallery-management {
+    margin-left: 350px; /* Space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+section#gallery-management h2 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+/* Button group styling */
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery grid styling */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border-radius: px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: px;
+    margin-bottom: 10px;
+}
+
+.gallery-item button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.update-image-btn {
+    background-color: #007bff;
+}
+
+.update-image-btn:hover {
+    background-color: #000000;
+}
+
+.delete-image-btn {
+    background-color: #000000;
+}
+
+.delete-image-btn:hover {
+    background-color: #007bff;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close-modal {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#image-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#image-form input[type="file"],
+#image-form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#image-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#image-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+    }
+}
