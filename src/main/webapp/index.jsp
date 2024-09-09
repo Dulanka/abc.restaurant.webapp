@@ -170,11 +170,10 @@
                                 <div class="footer-section quick-links">
                                     <h3>Quick Links</h3>
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="index.jsp">Home</a></li>
+                                        <li><a href="index.jsp">About Us</a></li>
+                                        <li><a href="Product.html">Services</a></li>
+                                        <li><a href="ubdex.jsp">Contact</a></li>
                                     </ul>
                                 </div>
                                 
